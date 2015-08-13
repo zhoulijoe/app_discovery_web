@@ -2,12 +2,11 @@
 
 /**
  * @ngdoc function
- * @name appDiscoveryWebApp.controller:AboutCtrl
+ * @name appDiscoveryWebApp.controller:TasksCtrl
  * @description
- * # AboutCtrl
+ * # TasksCtrl
  * Controller of the appDiscoveryWebApp
  */
 angular.module('appDiscoveryWebApp')
-  .controller('AboutCtrl', function () {
-
-  });
+    .controller('TasksCtrl', function () {
+    });
