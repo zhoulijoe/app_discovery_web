@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc function
  * @name appDiscoveryWebApp.controller:AboutCtrl
@@ -7,7 +5,8 @@
  * # AboutCtrl
  * Controller of the appDiscoveryWebApp
  */
-angular.module('appDiscoveryWebApp')
-  .controller('AboutCtrl', function () {
+function AboutController () {
 
-  });
+}
+
+export { AboutController };

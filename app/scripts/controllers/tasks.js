@@ -1,4 +1,4 @@
-'use strict';
+import { MockTaskManagerInstance } from '../managers/mocks/mockTaskManager';
 
 /**
  * @ngdoc function
@@ -7,6 +7,8 @@
  * # TasksCtrl
  * Controller of the appDiscoveryWebApp
  */
-angular.module('appDiscoveryWebApp')
-    .controller('TasksCtrl', function () {
-    });
+function TasksController () {
+    this.tasks = MockTaskManagerInstance.tasks;
+}
+
+export { TasksController };

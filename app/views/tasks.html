@@ -1,5 +1,5 @@
-    <h1>App Discovery</h1>
-
-    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-    <hr>
-    <h1>Hello {{yourName}}!</h1>
+<div class="container" ng-controller="TasksCtrl as tasksCtrl">
+    <p ng-repeat="task in tasksCtrl.tasks">
+        {{task.summary}}
+    </p>
+</div>

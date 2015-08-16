@@ -1,23 +1,23 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: TasksCtrl', function () {
 
     // load the controller's module
     beforeEach(module('appDiscoveryWebApp'));
 
-    var AboutCtrl,
+    var TasksCtrl,
         scope;
 
     // Initialize the controller and a mock scope
     beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
-        AboutCtrl = $controller('AboutCtrl', {
+        TasksCtrl = $controller('TasksCtrl', {
             $scope: scope
             // place here mocked dependencies
         });
     }));
 
-    it('should exists', function() {
-        expect(AboutCtrl).toBeDefined();
+    it('should contain list of 5 tasks', function () {
+        expect(TasksCtrl.tasks.length).toBe(5);
     });
 });
